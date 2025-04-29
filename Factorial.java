@@ -7,7 +7,7 @@ class Factorial {
             System.out.println("Factorial is not defined for negative numbers.");
             return -1; // Return -1 to indicate an error
         }
-        if(num == 0 || num == 1) {
+        else if(num == 0 || num == 1) {
             return 1;
         } 
         else {
@@ -21,7 +21,7 @@ class Factorial {
         int num = inp.nextInt();
         int result = factorial(num);
         if(result != -1) {
-            System.out.printf("The factorial of %d is %d\n", num, result);
+            System.out.printf("The factorial of %d! is %d\n", num, result);
         }
         inp.close();
     }
